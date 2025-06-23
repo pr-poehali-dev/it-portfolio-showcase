@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Portfolio = () => {
   const projects = [
     {
@@ -71,9 +73,12 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200">
+          <Link
+            to="/portfolio"
+            className="border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-block"
+          >
             Смотреть все проекты
-          </button>
+          </Link>
         </div>
       </div>
     </section>
